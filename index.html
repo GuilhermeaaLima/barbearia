@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Premium - Cortes e Estilos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navegação -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>✂️ BarberStyle</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#agendamento">Agendar</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Bem-vindo à BarberStyle</h2>
+            <p>Cortes impecáveis e estilo refinado</p>
+            <a href="#agendamento" class="btn-primary">Agende seu Corte</a>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="servico-icon">💈</div>
+                    <h3>Corte Masculino</h3>
+                    <p>Cortes modernos e clássicos para todos os estilos</p>
+                    <span class="preco">R$ 50,00</span>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">🧔</div>
+                    <h3>Barba Design</h3>
+                    <p>Aparamento profissional e design de barba</p>
+                    <span class="preco">R$ 35,00</span>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">✨</div>
+                    <h3>Tratamento Capilar</h3>
+                    <p>Hidratação e tratamento premium para cabelos</p>
+                    <span class="preco">R$ 45,00</span>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">🪮</div>
+                    <h3>Pigmentação</h3>
+                    <p>Tinta profissional com produtos de qualidade</p>
+                    <span class="preco">R$ 60,00</span>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">💆</div>
+                    <h3>Massagem Relaxante</h3>
+                    <p>Relaxe enquanto cuida de sua aparência</p>
+                    <span class="preco">R$ 40,00</span>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">🎨</div>
+                    <h3>Combo Completo</h3>
+                    <p>Corte + Barba + Tratamento capilar</p>
+                    <span class="preco">R$ 120,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="galeria">
+        <div class="container">
+            <h2 class="section-title">Galeria de Cortes</h2>
+            <div class="galeria-grid">
+                <div class="galeria-item">
+                    <div class="galeria-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <p>Corte Fade Moderno</p>
+                </div>
+                <div class="galeria-item">
+                    <div class="galeria-img" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <p>Design Barba Clássico</p>
+                </div>
+                <div class="galeria-item">
+                    <div class="galeria-img" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <p>Corte Textured</p>
+                </div>
+                <div class="galeria-item">
+                    <div class="galeria-img" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                    <p>Corte Undercut</p>
+                </div>
+                <div class="galeria-item">
+                    <div class="galeria-img" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <p>Corte Pompadour</p>
+                </div>
+                <div class="galeria-item">
+                    <div class="galeria-img" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+                    <p>Corte Crew</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento -->
+    <section id="agendamento" class="agendamento">
+        <div class="container">
+            <h2 class="section-title">Agende seu Horário</h2>
+            <form class="form-agendamento" id="formAgendamento">
+                <div class="form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone *</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 9999-9999" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="servico">Serviço *</label>
+                    <select id="servico" name="servico" required>
+                        <option value="">Selecione um serviço</option>
+                        <option value="corte">Corte Masculino - R$ 50,00</option>
+                        <option value="barba">Barba Design - R$ 35,00</option>
+                        <option value="tratamento">Tratamento Capilar - R$ 45,00</option>
+                        <option value="pigmentacao">Pigmentação - R$ 60,00</option>
+                        <option value="massagem">Massagem Relaxante - R$ 40,00</option>
+                        <option value="combo">Combo Completo - R$ 120,00</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="data">Data *</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="hora">Hora *</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Observações</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Alguma observação especial?"></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Confirmar Agendamento</button>
+            </form>
+
+            <div id="mensagemSucesso" class="mensagem-sucesso" style="display:none;">
+                ✓ Agendamento realizado com sucesso! Entraremos em contato para confirmar.
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section class="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre Nós</h2>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <p>A BarberStyle é uma barbearia moderna com mais de 10 anos de experiência no ramo. Oferecemos serviços de alta qualidade com profissionais qualificados e treinados nas tendências mais atuais de estilo e cuidado pessoal.</p>
+                    <p>Nossa missão é fazer cada cliente se sentir especial e bem cuidado, com atenção aos detalhes e um atendimento excepcional.</p>
+                    <ul class="about-list">
+                        <li>✓ Profissionais qualificados</li>
+                        <li>✓ Produtos premium</li>
+                        <li>✓ Ambiente acolhedor</li>
+                        <li>✓ Atendimento personalizado</li>
+                    </ul>
+                </div>
+                <div class="sobre-stats">
+                    <div class="stat">
+                        <h3>1000+</h3>
+                        <p>Clientes Satisfeitos</p>
+                    </div>
+                    <div class="stat">
+                        <h3>10+</h3>
+                        <p>Anos de Experiência</p>
+                    </div>
+                    <div class="stat">
+                        <h3>15+</h3>
+                        <p>Profissionais</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contato-grid">
+                <div class="contato-info">
+                    <h3>📍 Localização</h3>
+                    <p>Rua das Barbas, 123<br>São Paulo - SP<br>CEP: 01310-100</p>
+                </div>
+                <div class="contato-info">
+                    <h3>📞 Telefone</h3>
+                    <p>(11) 3333-3333<br>(11) 99999-9999<br>Disponível 24/7</p>
+                </div>
+                <div class="contato-info">
+                    <h3>🕐 Horário</h3>
+                    <p>Seg-Sex: 09:00 - 20:00<br>Sábado: 09:00 - 18:00<br>Domingo: Fechado</p>
+                </div>
+                <div class="contato-info">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:contato@barberstyle.com">contato@barberstyle.com</a></p>
+                </div>
+            </div>
+
+            <div class="redes-sociais">
+                <h3>Nos Siga</h3>
+                <div class="social-links">
+                    <a href="#" class="social-btn">Facebook</a>
+                    <a href="#" class="social-btn">Instagram</a>
+                    <a href="#" class="social-btn">WhatsApp</a>
+                    <a href="#" class="social-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 BarberStyle. Todos os direitos reservados.</p>
+            <p>Desenvolvido com ❤️ para os homens que cuidam de seu estilo</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
